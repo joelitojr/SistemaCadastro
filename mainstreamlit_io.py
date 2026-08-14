@@ -12,29 +12,29 @@
 # # Para enviar para nuvem / web , através de criação de diretório específico no Githup com o código e arquivo "main.py". 
 # # Depois acessar com a conta do GitHub e fazer deploy do arquivo (página criada) da branche (arquivo "main.py")
 
-import streamlit as st
-import pandas as pd
+# import streamlit as st
+# import pandas as pd
 
 
-# # Exemplo 1
+# # # Exemplo 1
 
-# st.title('CALCULADORA')
-# st.header('teste')
+# # st.title('CALCULADORA')
+# # st.header('teste')
 
-dados  =  pd.read_csv('dados.csv')
-df = pd.DataFrame(dados)
-st.dataframe(df)
-st.bar_chart(df, x = 'nome', y = 'nota')
+# dados  =  pd.read_csv('dados.csv')
+# df = pd.DataFrame(dados)
+# st.dataframe(df)
+# st.bar_chart(df, x = 'nome', y = 'nota')
 
-n1 =  st.number_input('nº' )
-n2 =  st.number_input('nº', value=0.0)
+# n1 =  st.number_input('nº' )
+# n2 =  st.number_input('nº', value=0.0)
 
-if st.button('Calcular...') :   
-   if n1 and n2:
-      soma  =  n1 + n2
-      st.info( soma)
-   else:
-      print('Digite algo ')    
+# if st.button('Calcular...') :   
+#    if n1 and n2:
+#       soma  =  n1 + n2
+#       st.info( soma)
+#    else:
+#       print('Digite algo ')    
 
 
 
